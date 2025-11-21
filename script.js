@@ -6,6 +6,16 @@ const posts = [
         link: "posts/sample-post.html",
         category: "gossip"
     },
+    const posts = [
+    // ...existing posts
+    {
+        title: "New Celebrity Gossip: Shocking Revelations!",
+        image: "assets/images/gossip-photo.jpg",
+        link: "posts/2025-11-21-new-celebrity-gossip.html",
+        category: "gossip"
+    }
+];
+
     {
         title: "Otile Brown Drops New Hit — Fans Go Wild",
         image: "assets/images/post2.jpg",
