@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Music - Muziki Connect</title>
+    <title>New Celebrity Gossip</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -12,36 +12,36 @@
         <a href="../index.html">Home</a>
     </nav>
 </header>
+<main class="post-page">
+    <h1>Grammy-winning Kenyan-American rapper KayCyy, returns.</h1>
 
-<h1 style="padding:20px;">Music News</h1>
+    <img src="../assets/images/charisma.jpg" alt="Celebrity Gossip Image" style="width:100%; border-radius:10px; margin-top:10px;" />
 
-<div id="category-posts" class="content"></div>
+   <section class="artist-bio">
+  <p>
+    Grammy winning Kenyan American rapper <strong>"KayCyy,"</strong>born Mark Makora Mbogo in Keroka to Kisii parents, has returned to Kenya after 17 years.
+  </p>
 
-<script>
-    const posts = [
-        {
-            title: "Grammy-winning Kenyan-American rapper KayCyy,",
-            image: "../assets/images/kcy.jpg",
-            link: "../categories/kaycyygrammy.html",
-            category: "music"
-        }
-    ];
+  <p>
+    He was welcomed at the Jomo Kenyatta International Airport (JKIA) by street rappers and DJ Poizon Ivy. KayCyy's homecoming is part of a tour he has branded "Chapter 1 = ROOTS"
+  </p>
 
-    const container = document.getElementById("category-posts");
+  <p>
+   KayCyy has indicated that his return is about "cultural update" and building a stronger musical infrastructure in East Africa, rather than a visit.
+  </p>
 
-    posts.forEach(post => {
-        container.innerHTML += `
-            <div class="post-card">
-                <a href="${post.link}">
-                    <img src="${post.image}">
-                </a>
-                <div class="post-info">
-                    <h2>${post.title}</h2>
-                </div>
-            </div>
-        `;
-    });
-</script>
+  <p>
+   He recently collaborated with Kenyan artist <strong> "Njerae" </strong> on the single "Far Away" and has spoken about working with local talent to give his work a more global appeal.
+ 
+  </p>
+
+  <p>
+   His visit precedes the release of his debut studio album.
+  </p>
+</section>
+
+</main>
+
 <footer>
   <div class="footer-container">
 
@@ -58,7 +58,7 @@
       <a href="categories/entertainment.html">Entertainment</a>
     </div>
 
-    <div class="footer-socials">
+   <div class="footer-socials">
   <h3>Follow Us</h3>
   <div class="social-icons">
     <a href="https://facebook.com/muziki.connect" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
@@ -84,6 +84,8 @@
   </div>
 </div>
 
+
+  </div>
 
    <div class="footer-bottom">
     © 2025 Muziki Connect. All Rights Reserved.
