@@ -1,9 +1,9 @@
 // Sample posts list (you will replace with real ones)
 const posts = [
     {
-        title: "Grammy-winning, Kenyan-American rapper KayCyy,",
-        image: "assets/images/post1.jpg",
-        link: "posts/sample-post.html",
+        title: "Grammy-winning, Kenyan-American rapper KayCyy,returns....",
+        image: "assets/images/kcy.jpg",
+        link: "posts/2025-11-21-Grammy-Kaycy.html",
         category: "gossip"
     },
     
