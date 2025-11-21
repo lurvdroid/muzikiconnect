@@ -16,10 +16,10 @@ const posts = [
 
 
     {
-        title: "Otile Brown Drops New Hit — Fans Go Wild",
+        title: "Sauti Sol's Live and Die In Africa #LADIA 10th  Anniversary ",
         image: "assets/images/post2.jpg",
-        link: "posts/sample-post.html",
-        category: "music"
+        link: "posts/2025-11-21-ladia-sautisol.html",
+        category: "gossip"
     },
     {
         title: "Comedian Flaqo Signs Big Brand Deal",
