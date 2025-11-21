@@ -17,7 +17,7 @@ const posts = [
 
     {
         title: "Sauti Sol's Live and Die In Africa #LADIA 10th  Anniversary ",
-        image: "assets/images/post2.jpg",
+        image: "assets/images/ladiasol.jpg",
         link: "posts/2025-11-21-ladia-sautisol.html",
         category: "gossip"
     },
