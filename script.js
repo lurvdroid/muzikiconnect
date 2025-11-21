@@ -22,7 +22,7 @@ const posts = [
         category: "gossip"
     },
     {
-        title: "Luciano Concert",
+        title: "Luciano Concert:Reggae legend Luciano is in Nairobi",
         image: "assets/images/luciano.jpg",
         link: "posts/2025-11-21-luciano.html",
         category: "entertainment"
