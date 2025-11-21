@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music - Muziki Connect</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">MUZIKI CONNECT</div>
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+</header>
+
+<h1 style="padding:20px;">Music News</h1>
+
+<div id="category-posts" class="content"></div>
+
+<script>
+    const posts = [
+        {
+            title: "Otile Brown Drops New Hit — Fans Go Crazy",
+            image: "../assets/images/post2.jpg",
+            link: "../posts/sample-post.html",
+            category: "music"
+        }
+    ];
+
+    const container = document.getElementById("category-posts");
+
+    posts.forEach(post => {
+        container.innerHTML += `
+            <div class="post-card">
+                <a href="${post.link}">
+                    <img src="${post.image}">
+                </a>
+                <div class="post-info">
+                    <h2>${post.title}</h2>
+                </div>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>
