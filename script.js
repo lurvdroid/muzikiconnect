@@ -6,15 +6,14 @@ const posts = [
         link: "posts/sample-post.html",
         category: "gossip"
     },
-    const posts = [
-    // ...existing posts
+    
     {
         title: "Singer Charisma acquires luxury car",
         image: "assets/images/charisma.jpg",
         link: "posts/2025-11-21-charisma-gossip.html",
         category: "gossip"
-    }
-];
+    },
+
 
     {
         title: "Otile Brown Drops New Hit — Fans Go Wild",
