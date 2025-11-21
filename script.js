@@ -9,9 +9,9 @@ const posts = [
     const posts = [
     // ...existing posts
     {
-        title: "New Celebrity Gossip: Shocking Revelations!",
-        image: "assets/images/gossip-photo.jpg",
-        link: "posts/2025-11-21-new-celebrity-gossip.html",
+        title: "Singer Charisma acquires luxury car",
+        image: "assets/images/charisma.jpg",
+        link: "posts/2025-11-21-charisma-gossip.html",
         category: "gossip"
     }
 ];
