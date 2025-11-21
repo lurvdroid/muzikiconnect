@@ -1,7 +1,7 @@
 // Sample posts list (you will replace with real ones)
 const posts = [
     {
-        title: "Diamond & Zuchu Spark Dating Rumors Again",
+        title: "Grammy-winning, Kenyan-American rapper KayCyy,",
         image: "assets/images/post1.jpg",
         link: "posts/sample-post.html",
         category: "gossip"
