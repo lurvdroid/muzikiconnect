@@ -22,7 +22,7 @@ const posts = [
         category: "gossip"
     },
     {
-        title: "Comedian Flaqo Signs Big Brand Deal",
+        title: "Luciano Concert",
         image: "assets/images/post3.jpg",
         link: "posts/sample-post.html",
         category: "entertainment"
