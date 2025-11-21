@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muziki Connect</title>
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muziki Connect | Music • Gossip • Entertainment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">MUZIKI CONNECT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories/music.html">Music</a>
+        <a href="categories/gossip.html">Gossip</a>
+        <a href="categories/entertainment.html">Entertainment</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="assets/images/hero.jpg" alt="Hero image">
+    <div class="hero-text">Your Plug for Music, Gossip & Entertainment</div>
+</section>
+
+<main class="content">
+
+    <section class="posts-grid" id="posts-container">
+
+        <!-- Posts auto-loaded by JS -->
+        
+    </section>
+
+    <aside class="sidebar">
+        <h3>Trending</h3>
+        <ul id="trending-list"></ul>
+
+        <h3>Latest</h3>
+        <ul id="latest-list"></ul>
+    </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
 </html>
