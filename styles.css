@@ -16,6 +16,25 @@ header {
     top: 0;
     z-index: 10;
 }
+header .logo img {
+    height: 50px; /* adjust size as needed */
+    width: auto;
+    display: block;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
 
 header .logo {
     font-size: 22px;
