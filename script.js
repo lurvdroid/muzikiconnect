@@ -24,7 +24,7 @@ const posts = [
     {
         title: "Luciano Concert",
         image: "assets/images/luciano.jpg",
-        link: "posts/sample-post.html",
+        link: "posts/2025-11-21-luciano.html",
         category: "entertainment"
     }
 ];
