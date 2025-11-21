@@ -23,7 +23,7 @@ const posts = [
     },
     {
         title: "Luciano Concert",
-        image: "assets/images/post3.jpg",
+        image: "assets/images/luciano.jpg",
         link: "posts/sample-post.html",
         category: "entertainment"
     }
