@@ -2,52 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Submit Your Music - Muziki Connect</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #020617;
-      color: #eee;
+    /* Extra styles for submissions form */
+    main.content {
+      max-width: 700px;
+      margin: 40px auto;
       padding: 20px;
-      max-width: 600px;
-      margin: auto;
+      background: #0f172a; /* dark blue bg matching your style */
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      color: #e2e8f0;
+      font-family: 'Orbitron', sans-serif;
     }
-    h1 {
-      color: #38bdf8;
+
+    main.content h1 {
+      color: #38bdf8; /* your signature blue */
+      margin-bottom: 20px;
+      font-weight: 700;
     }
+
     label {
       display: block;
       margin: 15px 0 5px;
+      font-weight: 600;
     }
+
     input, textarea {
       width: 100%;
-      padding: 10px;
-      border-radius: 6px;
+      padding: 12px;
+      border-radius: 8px;
       border: none;
       font-size: 16px;
+      font-family: inherit;
+      background: #1e293b; /* dark input bg */
+      color: #e2e8f0;
     }
+
     input[type="submit"] {
       background: #38bdf8;
       color: #020617;
-      font-weight: bold;
+      font-weight: 700;
       cursor: pointer;
-      margin-top: 20px;
+      margin-top: 25px;
       transition: background 0.3s ease;
       border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 18px;
     }
+
     input[type="submit"]:hover {
       background: #0ea5e9;
     }
+
     .note {
       font-size: 14px;
-      color: #999;
+      color: #94a3b8;
       margin-top: 10px;
+      font-style: italic;
     }
   </style>
 </head>
+
 <body>
 
+<header>
+    <a href="../index.html" class="logo">
+        <img src="../assets/images/logo.png" alt="Muziki Connect Logo">
+    </a>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Word On The Street ▾</a>
+
+                <ul class="dropdown-content">
+                    <li><a href="gossip.html">Gossip</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="streetbuzz.html">Street Buzz</a></li>
+                </ul>
+            </li>
+
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="submissions.html" class="active">Submit</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
   <h1>Submit Your Music</h1>
   <p>Are you an artist or creator? Submit your music to be featured on Muziki Connect! Please fill out the form below and provide a link to your work or upload a file.</p>
 
@@ -68,12 +116,54 @@
     <input type="file" id="fileUpload" name="fileUpload" accept=".mp3,.wav" />
 
     <label for="message">Short Bio / Message</label>
-    <textarea id="message" name="message" rows="4" placeholder="Tell us something about your music or yourself..."></textarea>
+    <textarea id="message" name="message" rows="5" placeholder="Tell us something about your music or yourself..."></textarea>
 
     <input type="submit" value="Submit Music" />
   </form>
 
   <p class="note">* Required fields</p>
+</main>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h2>Muziki Connect</h2>
+      <p>Diversified Entertainment Company.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="../index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="gossip.html">Gossip</a>
+      <a href="entertainment.html">Entertainment</a>
+    </div>
+
+    <div class="footer-socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <!-- Your social icons SVG code here, same as index.html -->
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Muziki Connect. All Rights Reserved.
+  </div>
+  <div class="footer-credit">
+    Designed by <a href="https://lurvdroid.vercel.app/" target="_blank" rel="noopener noreferrer">Droid</a>
+  </div>
+</footer>
+
+<script>
+  // Dropdown click toggle script (same as your index.html)
+  document.querySelector('.dropbtn').addEventListener('click', function(e) {
+      e.preventDefault(); // prevent redirect
+      this.parentElement.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
