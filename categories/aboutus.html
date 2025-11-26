@@ -1,6 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <title>About Us - Muziki Connect</title>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 10px 0;
+      color: white;
+    }
+
+    header .logo img {
+      height: 50px;
+    }
+
+    nav ul.menu {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul.menu li {
+      margin: 0 15px;
+    }
+
+    nav ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    .menu .active {
+      font-weight: bold;
+    }
+
+    main.content {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    main.content h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    main.content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: #222;
+      color: white;
+    }
+
+    .footer-container h2, .footer-container h3 {
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .footer-socials .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .footer-socials .social-icons a:hover {
+      color: #1e90ff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer-credit {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .footer-credit a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .footer-credit a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-links, .footer-socials {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="../index.html" class="logo">
+    <img src="../assets/images/logo.png" alt="Muziki Connect Logo" />
+  </a>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Word On The Street ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="gossip.html">Gossip</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="streetbuzz.html">Street Buzz</a></li>
+        </ul>
+      </li>
+      <li><a href="aboutus.html" class="active">About Us</a></li>
+      <li><a href="submissions.html">Submit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <h1>About Us</h1>
+  <p>
+    Founded in 2016 and headquartered in Nairobi, <strong>Muziki Connect</strong> is a vibrant and diversified entertainment company dedicated to delivering the freshest and most trending news from the African entertainment scene. We are passionate about showcasing the dynamic world of Kenyan music and beyond, serving as your ultimate source for breaking stories, exclusive updates, and in-depth coverage.
+  </p>
+  <p>
+    Our team is made up of young, creative, and dedicated writers who work tirelessly to bring you accurate, up-to-the-minute information. We understand the pulse of the entertainment industry and aim to keep you connected to everything happening—from music releases and artist spotlights to viral trends and cultural moments.
+  </p>
+  <p>
+    Muziki Connect reaches a broad and engaged audience both locally and internationally through major digital platforms such as Facebook, Twitter, Instagram, YouTube, and our own website. This multi-platform approach ensures that our content is accessible wherever you are, whenever you want it.
+  </p>
+  <p>
+    We are committed to being the go-to destination for African entertainment lovers—where you find inspiration, excitement, and the stories that matter. At Muziki Connect, entertainment is more than news; it’s a celebration of culture, creativity, and connection.
+  </p>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>Muziki Connect</h2>
+      <p>Diversified Entertainment Company.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="../index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="gossip.html">Gossip</a>
+      <a href="entertainment.html">Entertainment</a>
+    </div>
+
+    <div class="footer-socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://facebook.com/muziki.connect" target="_blank" aria-label="Facebook">
+          <!-- Facebook SVG Icon -->
+        </a>
+        <a href="https://instagram.com/muzikiconnect" target="_blank" aria-label="Instagram">
+          <!-- Instagram SVG Icon -->
+        </a>
+        <a href="https://twitter.com/muzikiconnect" target="_blank" aria-label="Twitter">
+          <!-- Twitter SVG Icon -->
+        </a>
+        <a href="https://youtube.com/muzikiconnect" target="_blank" aria-label="YouTube">
+          <!-- YouTube SVG Icon -->
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Muziki Connect. All Rights Reserved.
+  </div>
+  <div class="footer-credit">
+    Designed by <a href="https://lurvdroid.vercel.app/" target="_blank">Droid</a>
+  </div>
+</footer>
+
+<script>
+  // Dropdown toggle for nav
+  document.querySelector('.dropbtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
+
   <meta charset="UTF-8" />
   <title>About Us - Muziki Connect</title>
   <link rel="icon" href="../favicon.ico" type="image/x-icon" />
