@@ -135,6 +135,12 @@ function changeSlide() {
 
 setInterval(changeSlide, 4000); // Change slide every 4 seconds
 </script>
+<script>
+document.querySelector('.dropbtn').addEventListener('click', function(e) {
+    e.preventDefault(); // prevent redirect
+    this.parentElement.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>
