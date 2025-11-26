@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submit Your Music - Muziki Connect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: #eee;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      color: #38bdf8;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background: #38bdf8;
+      color: #020617;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background: #0ea5e9;
+    }
+    .note {
+      font-size: 14px;
+      color: #999;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Submit Your Music</h1>
+  <p>Are you an artist or creator? Submit your music to be featured on Muziki Connect! Please fill out the form below and provide a link to your work or upload a file.</p>
+
+  <form action="YOUR_FORM_HANDLER_URL" method="POST" enctype="multipart/form-data">
+    <label for="artistName">Artist Name *</label>
+    <input type="text" id="artistName" name="artistName" required />
+
+    <label for="email">Contact Email *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="songTitle">Song/Project Title *</label>
+    <input type="text" id="songTitle" name="songTitle" required />
+
+    <label for="musicLink">Link to Your Music (SoundCloud, YouTube, Dropbox, etc.)</label>
+    <input type="url" id="musicLink" name="musicLink" placeholder="https://example.com" />
+
+    <label for="fileUpload">Or Upload Your Track (MP3, WAV, max 10MB)</label>
+    <input type="file" id="fileUpload" name="fileUpload" accept=".mp3,.wav" />
+
+    <label for="message">Short Bio / Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Tell us something about your music or yourself..."></textarea>
+
+    <input type="submit" value="Submit Music" />
+  </form>
+
+  <p class="note">* Required fields</p>
+
+</body>
+</html>
