@@ -47,58 +47,49 @@ header nav a {
     text-decoration: none;
     font-size: 16px;
 }
-/* Basic nav menu */
-nav {
-  background: #020617;
-  padding: 15px;
-}
-
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
 nav ul li {
-  position: relative;
+    position: relative;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
-/* DROPDOWN STYLES */
+/* Dropdown hidden by default */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: #0f172a;
-  padding: 10px 0;
-  border-radius: 6px;
-  min-width: 180px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #0f172a;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    padding: 10px 0;
 }
 
 .dropdown-content li {
-  padding: 8px 15px;
-  white-space: nowrap;
+    padding: 10px 15px;
 }
 
 .dropdown-content li a {
-  color: #e2e8f0;
+    color: #e2e8f0;
 }
 
-.dropdown-content li:hover a {
-  color: #38bdf8;
-}
-
-/* SHOW ON HOVER */
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
+
 
 .hero {
     position: relative;
