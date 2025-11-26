@@ -47,6 +47,58 @@ header nav a {
     text-decoration: none;
     font-size: 16px;
 }
+/* Basic nav menu */
+nav {
+  background: #020617;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* DROPDOWN STYLES */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #0f172a;
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.dropdown-content li {
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+
+.dropdown-content li a {
+  color: #e2e8f0;
+}
+
+.dropdown-content li:hover a {
+  color: #38bdf8;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .hero {
     position: relative;
