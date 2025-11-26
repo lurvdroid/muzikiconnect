@@ -63,6 +63,48 @@ nav a {
     color: white;
     font-weight: 600;
 }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Hidden dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #0f172a;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    padding: 10px 15px;
+}
+
+.dropdown-content li a {
+    color: #e2e8f0;
+}
+
+/* Show dropdown when .active is added */
+.dropdown.active .dropdown-content {
+    display: block;
+}
 
 /* Dropdown hidden by default */
 .dropdown-content {
