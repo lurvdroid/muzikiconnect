@@ -19,22 +19,45 @@
 <div id="category-posts" class="content"></div>
 
 <script>
+    // ALL blog posts (you can store them here globally)
     const posts = [
         {
             title: "Kanadia Katamba after she was left out of a chart ranking the most viewed East African female artists on YouTube.",
             image: "../assets/images/kanadia.jpg",
             link: "../posts/nadiamukami.html",
-            category: "street buzz"
+            category: "streetbuzz"
+        },
+        {
+            title: "One Spouse is Enough, Vatican tells world's catholics",
+            image: "../assets/images/popeleo.jpeg",
+            link: "../posts/vatican.html",
+            category: "streetbuzz"
+        },
+        {
+            title: "Celebrity updates",
+            image: "../assets/images/celebs.jpg",
+            link: "../posts/celebs.html",
+            category: "entertainment"
         }
     ];
 
+    // Select container
     const container = document.getElementById("category-posts");
 
-    posts.forEach(post => {
+    // Filter ONLY StreetBuzz category
+    const streetbuzzPosts = posts.filter(post => post.category === "streetbuzz");
+
+    // If no posts found
+    if (streetbuzzPosts.length === 0) {
+        container.innerHTML = "<p>No posts yet.</p>";
+    }
+
+    // Display filtered posts
+    streetbuzzPosts.forEach(post => {
         container.innerHTML += `
             <div class="post-card">
                 <a href="${post.link}">
-                    <img src="${post.image}">
+                    <img src="${post.image}" loading="lazy">
                 </a>
                 <div class="post-info">
                     <h2>${post.title}</h2>
@@ -43,6 +66,7 @@
         `;
     });
 </script>
+
 <footer>
   <div class="footer-container">
 
