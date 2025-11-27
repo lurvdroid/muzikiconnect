@@ -141,6 +141,53 @@ document.querySelector('.dropbtn').addEventListener('click', function(e) {
     this.parentElement.classList.toggle('active');
 });
 </script>
+<script>
+    // All posts on your site (add more here as you create new posts)
+    const posts = [
+        {
+            title: "Kanadia Katamba Reacts to Chart Rankings",
+            link: "posts/nadiamukami.html",
+            views: 12000,
+            date: "2025-02-25"
+        },
+        {
+            title: "New Nairobi Fashion Trends",
+            link: "posts/fashion.html",
+            views: 9000,
+            date: "2025-02-24"
+        },
+        {
+            title: "Tanzanian Artist Breaks a New Record",
+            link: "posts/tzartist.html",
+            views: 22000,
+            date: "2025-02-23"
+        }
+    ];
+
+    // Get the UI elements
+    const trendingList = document.getElementById("trending-list");
+    const latestList = document.getElementById("latest-list");
+
+    // TRENDING = Sort by views (highest first)
+    const trendingPosts = [...posts].sort((a, b) => b.views - a.views).slice(0, 5);
+
+    // LATEST = Sort by date (newest first)
+    const latestPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+
+    // Display Trending posts
+    trendingPosts.forEach(post => {
+        trendingList.innerHTML += `
+            <li><a href="${post.link}">${post.title}</a></li>
+        `;
+    });
+
+    // Display Latest posts
+    latestPosts.forEach(post => {
+        latestList.innerHTML += `
+            <li><a href="${post.link}">${post.title}</a></li>
+        `;
+    });
+</script>
 
 </body>
 </html>
