@@ -163,6 +163,18 @@ document.querySelector('.dropbtn').addEventListener('click', function(e) {
             date: "2025-11-21"
         }
     ];
+  const postsContainer = document.getElementById("posts-container");
+postsContainer.innerHTML = '';  // Clear any existing content
+
+posts.forEach(post => {
+  postsContainer.innerHTML += `
+    <article class="post-card">
+      <h3><a href="${post.link}">${post.title}</a></h3>
+      <p><strong>Views:</strong> ${post.views.toLocaleString()} | <strong>Date:</strong> ${post.date}</p>
+    </article>
+  `;
+});
+
 
     // Get the UI elements
     const trendingList = document.getElementById("trending-list");
