@@ -157,6 +157,53 @@ main.content {
   gap: 30px;
   padding: 0 20px;
 }
+.post-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+    color: #e5e7eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 12px;
+    margin: 15px 0 25px;
+}
+
+.post-content p {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+}
+
+.lyrics-title {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.lyrics {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-top: 10px;
+    border: 1px solid #1e293b;
+}
+
 
 /* Posts grid */
 .posts-grid {
